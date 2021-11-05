@@ -1,4 +1,4 @@
-// //alert('is this working?');
+alert('is this working?');
 //
 // function isOdd(x) {
 //     return(x % 2 !==0);
@@ -145,10 +145,10 @@
 /** Write a function named 'moveToEnd' that takes in an array, and returns the array with the original first index moved to the last index of the array.
 
  Example:
- moveToEnd([1, 2, 3, 4]) 		  // returns [2, 3, 4, 1];
+ moveToEnd([1, 2, 3, 4])          // returns [2, 3, 4, 1];
  moveToEnd(['roll', 'rock', 'and']  // returns ['rock', 'and', 'roll']; **/
 
-function moveToEnd (arr) {
+function moveToEnd(arr) {
     return arr.push(arr.shift());
 }
 
@@ -162,5 +162,78 @@ var yamper = {
     height: '1\'00"',
     type: 'Electric',
     weaknesses: 'Ground',
-    movesLearned: ['Wild Charge', 'Play Rough', 'Crunch', 'Electro Ball' ]
+    movesLearned: ['Wild Charge', 'Play Rough', 'Crunch', 'Electro Ball']
 }
+
+
+// var circle = {
+//     radius: 36
+// }
+//
+// function areaOfCircle (object) {
+//     return Math.PI * (object.radius * object.radius);
+// }
+//
+// console.log(areaOfCircle(circle));
+//
+// console.log(parseInt(Math.PI * ( circle.radius * circle.radius )));
+
+var groceries = [
+    {
+        name: "carrots",
+        quantity: 5
+    }, {
+        name: "yams",
+        quantity: 50
+    }, {
+        name: "oranges",
+        quantity: 9
+    }, {
+        name: "onions",
+        quantity: 2
+    }, {
+        name: "cucumbers",
+        quantity: 6
+    }, {
+        name: "potatoes",
+        quantity: 8
+    }
+];
+
+
+function sortByName (arr) {
+    arr.sort((a, b) => {
+        let fa = a.name.toLowerCase(),
+            fb = b.name.toLowerCase();
+
+        if (fa < fb) {
+            return -1;
+        }
+        if (fa > fb ) {
+            return 1;
+        }
+        return 0;
+
+    });
+}
+var products = [
+    {
+        name: 'Playstation 5',
+        price: 599.99
+    }, {
+        name: 'Logitech Wireless Mouse',
+        price: 23.99
+    }, {
+        name: 'Macbook Pro',
+        price: 1099.99
+    }, {
+        name: 'GoPro HERO10',
+        price: 399.99
+    }, {
+        name: '12" & 6" Metal Ruler Set',
+        price: 5.99
+    }]
+
+sortByName(products);
+
+console.log(products);
