@@ -237,3 +237,48 @@ var products = [
 sortByName(products);
 
 console.log(products);
+
+function findShortestPlayer (arr) {
+    arr.sort((a, b) => {
+        let fa = a.height,
+            fb = b.height;
+
+        if (fa < fb) {
+            return -1;
+        }
+        if (fa > fb) {
+            return 1;
+        }
+        return 0;
+
+    });
+
+    return arr[0];
+}
+
+
+
+var bBallPlayers = [
+    {
+        name: "Hakeem Olajuwon",
+        height: 213
+    }, {
+        name: "Muggsy Bogues",
+        height: 160
+    }, {
+        name: "Chris Paul",
+        height: 183
+    }, {
+        name: "Bol Bol",
+        height: 218
+    }, {
+        name: "Moochie Norris",
+        height: 185
+    }, {
+        name: "Manu Ginobili",
+        height: 198
+    }
+];
+
+
+console.log(findShortestPlayer(bBallPlayers));
