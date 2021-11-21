@@ -1,4 +1,4 @@
-alert('is this working?');
+// alert('is this working?');
 //
 // function isOdd(x) {
 //     return(x % 2 !==0);
@@ -177,108 +177,145 @@ var yamper = {
 // console.log(areaOfCircle(circle));
 //
 // console.log(parseInt(Math.PI * ( circle.radius * circle.radius )));
+//
+// var groceries = [
+//     {
+//         name: "carrots",
+//         quantity: 5
+//     }, {
+//         name: "yams",
+//         quantity: 50
+//     }, {
+//         name: "oranges",
+//         quantity: 9
+//     }, {
+//         name: "onions",
+//         quantity: 2
+//     }, {
+//         name: "cucumbers",
+//         quantity: 6
+//     }, {
+//         name: "potatoes",
+//         quantity: 8
+//     }
+// ];
+//
+//
+// function sortByName (arr) {
+//     arr.sort((a, b) => {
+//         let fa = a.name.toLowerCase(),
+//             fb = b.name.toLowerCase();
+//
+//         if (fa < fb) {
+//             return -1;
+//         }
+//         if (fa > fb ) {
+//             return 1;
+//         }
+//         return 0;
+//
+//     });
+// }
+// var products = [
+//     {
+//         name: 'Playstation 5',
+//         price: 599.99
+//     }, {
+//         name: 'Logitech Wireless Mouse',
+//         price: 23.99
+//     }, {
+//         name: 'Macbook Pro',
+//         price: 1099.99
+//     }, {
+//         name: 'GoPro HERO10',
+//         price: 399.99
+//     }, {
+//         name: '12" & 6" Metal Ruler Set',
+//         price: 5.99
+//     }]
+//
+// sortByName(products);
+//
+// console.log(products);
+//
+// function findShortestPlayer (arr) {
+//     arr.sort((a, b) => {
+//         let fa = a.height,
+//             fb = b.height;
+//
+//         if (fa < fb) {
+//             return -1;
+//         }
+//         if (fa > fb) {
+//             return 1;
+//         }
+//         return 0;
+//
+//     });
+//
+//     return arr[0];
+// }
+//
+//
+//
+// var bBallPlayers = [
+//     {
+//         name: "Hakeem Olajuwon",
+//         height: 213
+//     }, {
+//         name: "Muggsy Bogues",
+//         height: 160
+//     }, {
+//         name: "Chris Paul",
+//         height: 183
+//     }, {
+//         name: "Bol Bol",
+//         height: 218
+//     }, {
+//         name: "Moochie Norris",
+//         height: 185
+//     }, {
+//         name: "Manu Ginobili",
+//         height: 198
+//     }
+// ];
+//
+//
+// console.log(findShortestPlayer(bBallPlayers));
 
-var groceries = [
-    {
-        name: "carrots",
-        quantity: 5
-    }, {
-        name: "yams",
-        quantity: 50
-    }, {
-        name: "oranges",
-        quantity: 9
-    }, {
-        name: "onions",
-        quantity: 2
-    }, {
-        name: "cucumbers",
-        quantity: 6
-    }, {
-        name: "potatoes",
-        quantity: 8
+var myCharacter = {
+    name: 'Eloys',
+    hitPoints: 100,
+    class: 'Warrior',
+    abilities: {
+        attack: function(obj) {
+            console.log(obj.name + ' has ' + obj.hitPoints + ' hitpoints.');
+            console.log(myCharacter.name + ' attacks him with ' + myCharacter.weapon.name +'!');
+            console.log('It deals ' + myCharacter.weapon.damage + ' damage!');
+            obj.hitPoints -= myCharacter.weapon.damage;
+            console.log(obj.name + ' has ' + obj.hitPoints + ' hitpoints left!');
+        },
+    },
+    magicPoints: 0,
+    weapon: {
+        name: 'Silver Sabre',
+        damage: 16,
+        type: 'sword'
     }
-];
-
-
-function sortByName (arr) {
-    arr.sort((a, b) => {
-        let fa = a.name.toLowerCase(),
-            fb = b.name.toLowerCase();
-
-        if (fa < fb) {
-            return -1;
-        }
-        if (fa > fb ) {
-            return 1;
-        }
-        return 0;
-
-    });
 }
-var products = [
-    {
-        name: 'Playstation 5',
-        price: 599.99
-    }, {
-        name: 'Logitech Wireless Mouse',
-        price: 23.99
-    }, {
-        name: 'Macbook Pro',
-        price: 1099.99
-    }, {
-        name: 'GoPro HERO10',
-        price: 399.99
-    }, {
-        name: '12" & 6" Metal Ruler Set',
-        price: 5.99
-    }]
 
-sortByName(products);
-
-console.log(products);
-
-function findShortestPlayer (arr) {
-    arr.sort((a, b) => {
-        let fa = a.height,
-            fb = b.height;
-
-        if (fa < fb) {
-            return -1;
-        }
-        if (fa > fb) {
-            return 1;
-        }
-        return 0;
-
-    });
-
-    return arr[0];
+var enemy = {
+    name: 'Savage Orc',
+    hitPoints: 100,
+    class: 'Warrior',
+    magicPoints: 0,
 }
 
 
+var rockPaperScissors = ["rock","paper","scissors"];
 
-var bBallPlayers = [
-    {
-        name: "Hakeem Olajuwon",
-        height: 213
-    }, {
-        name: "Muggsy Bogues",
-        height: 160
-    }, {
-        name: "Chris Paul",
-        height: 183
-    }, {
-        name: "Bol Bol",
-        height: 218
-    }, {
-        name: "Moochie Norris",
-        height: 185
-    }, {
-        name: "Manu Ginobili",
-        height: 198
-    }
-];
+// console.log(getRandomElement(rockPaperScissors));
 
+// myCharacter.abilities.attack(enemy);
 
-console.log(findShortestPlayer(bBallPlayers));
+gi
